@@ -6,7 +6,7 @@ systemctl restart sshd.service
 
 yum install httpd  php -y
 
-cp -r ./website/*  /var/www/html/
+cp -r /tmp/website/*  /var/www/html/
 chown -R apache:apache /var/www/html/*
 
 systemctl restart php-fpm httpd.service
